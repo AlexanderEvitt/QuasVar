@@ -1,3 +1,0 @@
-Compile a list of known AGNs
-	Seyfert Galaxies Currently Known
-Power Spectrum - Take a fourier transform of the light curve
