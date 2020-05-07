@@ -1,6 +1,5 @@
 # QuasVar
-##Code for a quasar variability study - Fun wordplay right
-##Collaboration with @esellers04
+>Code for a quasar variability study in collaboration with @esellers04
 
 This code is designed to complete a quasar variability study using Transiting Exoplanet Survey Satellite (TESS) data and Long Short-Term Memory Recurrent Neural Networks (LSTM-RNN).
 
