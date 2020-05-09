@@ -26,6 +26,8 @@ Lbol | log10(bolometric L in erg s^-1)
 eLbol | error in log10(bolometric L in erg s^-1)
 nEdd | log10(Eddington ratio)
 
+**locator.py** is modified from https://github.com/kristalynne/tess_agn
+
 
 Below is some python-ish pseudocode that shows how we generate lightcurves
 ```python
