@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+
+% This is the preamble, load any packages you're going to use here
+\usepackage{physics} % provides lots of nice features and commands often used in physics, it also loads some other packages (like AMSmath)
+\usepackage{siunitx} % typesets numbers with units very nicely
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs, multirow}
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+\def\code#1{\texttt{#1}}
+\begin{document}
+
+\title{Comparison of Quasar Variability to Virial Black Hole Mass Estimates}
+\author{Alexander Evitt, Elizabeth Sellers}
+\date{Last updated \today{}}
+
+\maketitle
+
+\begin{abstract}
+Quasars are highly variable in electromagnetic flux over time across a wide band of wavelengths and timescales. The relationship between these variations in flux and the properties of the quasar itself is still not well understood. Despite this, past research has found some weak correlations between features of light curves and the Eddington ratio and mass of the residing supermassive black tole (SMBH). Unfortunately, these patterns remain unclear and often contradictory between studies. In order to better understand this relationship, we gathered a dataset of 21136 quasars from the Sloan Digital Sky Survey (SDSS) Quasar Catalog DR12 and matched them with virial SMBH mass estimates from Kozłowski (2017). We gathered a light curve for each object consisting of observations from the Transiting Exoplanet Survey Satellite (TESS) spaced at 30-minute intervals with 760 data points total for each light curve. Light curves were generated using the \code{eleanor} package (Feinstein et al. 2019). Machine learning was then applied to attempt to predict the SMBH mass given the light curve of the object. A wide spread of models from both representation learning and feature selection-based methods were attempted and none performed significantly better than random chance. We believe that this is due to error in the light curves caused by excessively dim objects making up the majority of the dataset and inaccuracies in the SMBH mass estimates. In future work, we will use a different catalogue of Active Galactic Nuclei (AGN) and begin by using machine learning to differentiate AGN and non-AGN light curves.  
+\end{abstract}
+
+\end{document}
